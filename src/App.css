@@ -28,6 +28,23 @@ img {
   max-width: 100%;
 }
 
+.primary-btn {
+  font-size: 1rem;
+  width: 13rem;
+  background: none;
+  color: inherit;
+  padding: 0.6rem 0.2rem;
+  border-radius: 50px;
+  border: 1px solid var(--grey);
+  transition: all 0.2s;
+}
+
+.primary-btn:hover {
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--grey);
+}
+
 .primary-container {
   display: flex;
   flex-direction: column;
@@ -199,25 +216,53 @@ img {
   font-weight: 500;
 }
 
-.wwa-btn {
-  font-size: 1rem;
-  width: 13rem;
-  background: none;
-  color: inherit;
-  padding: 0.6rem 0.2rem;
-  border-radius: 50px;
-  border: 1px solid var(--grey);
-  transition: all 0.2s;
-}
-
-.wwa-btn:hover {
-  cursor: pointer;
-  color: var(--white);
-  background-color: var(--grey);
-}
-
 .wwa-container-3-right {
   flex: 1;
+}
+
+.why-clay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://i.imgur.com/5qVNtb8.jpg") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+
+.wc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  background-color: var(--white);
+  gap: 1.5rem;
+  padding: 4.5rem;
+}
+
+.wc-text-1 {
+  font-size: 2.9rem;
+  color: var(--grey);
+  font-weight: 500;
+  text-align: center;
+}
+
+.wc-text-2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--grey);
+  width: 33rem;
+}
+
+.wc-text-3 {
+  font-size: 1.2rem;
+  color: var(--grey);
+  width: 35rem;
+  line-height: 1.5;
+}
+
+.wc-btn {
+  margin-top: 1rem;
 }
 
 /* media queries */
@@ -261,5 +306,16 @@ img {
   .wwa-btn {
     margin-top: 3rem;
     margin-bottom: 3rem;
+  }
+
+  .wc-container {
+    width: 90%;
+  }
+  .wc-text-2 {
+    width: 80%;
+  }
+
+  .wc-text-3 {
+    width: 80%;
   }
 }
