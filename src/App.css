@@ -1,38 +1,127 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto+Mono:wght@500&display=swap");
+
+:root {
+  --orange: #e65a0c;
+  --hover-orange: #f36a10;
+  --teal: #4b7e7b;
+  --white: #fff;
+  --black: #000;
+  --grey: #818386;
+  --link-font-size: 1.2rem;
+  --dropdown-font-size: 1.3rem;
+  --logo-font-size: 3rem;
+  --logo-font-family: "Caprasimo", cursive;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.primary-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  z-index: 1000;
+  width: 100%;
+  height: 5.5rem;
+  background-color: var(--white);
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10rem;
+  padding-right: 8rem;
+}
+
+.logo {
+  font-size: var(--logo-font-size);
+  font-weight: 1000;
+  font-family: var(--logo-font-family) !important;
+  letter-spacing: 2px;
+  background: linear-gradient(to right, var(--orange), var(--teal));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.toolbar-link {
+  color: var(--grey);
+  font-size: var(--link-font-size);
+  text-decoration: none;
+  padding: 0.8rem;
+}
+
+.toolbar-link:hover {
+  color: var(--hover-orange);
+  transform: scale(1.02);
+}
+
+.dropdown-icon {
+  display: none;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  gap: 0.3rem;
+  border: 1px solid var(--grey);
+  position: absolute;
+  z-index: 1500;
+  background-color: var(--white);
+  top: 3.2rem;
+  right: 1.8rem;
+  border-width: 1px;
+  box-shadow: var(--shadow, 0 0 #0000), var(--shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hide {
+  display: none;
+}
+
+.dropdown-link {
+  color: var(--grey);
+  font-size: var(--dropdown-font-size);
+  text-decoration: none;
+}
+
+.d-container {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
+
+.main {
+  background: url("https://i.imgur.com/4GH8KNo.jpg") no-repeat center center;
+  background-size: cover;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* media queries */
+@media (max-width: 1023px) {
+  .toolbar {
+    padding-left: 2rem;
+    padding-right: 1.7rem;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .links-container {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .dropdown-icon {
+    display: inline;
   }
 }
