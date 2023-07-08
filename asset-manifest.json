@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mud/static/css/main.cbb99555.css",
+    "main.js": "/mud/static/js/main.710e508e.js",
+    "index.html": "/mud/index.html",
+    "main.cbb99555.css.map": "/mud/static/css/main.cbb99555.css.map",
+    "main.710e508e.js.map": "/mud/static/js/main.710e508e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbb99555.css",
+    "static/js/main.710e508e.js"
+  ]
+}
