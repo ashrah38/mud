@@ -1,8 +1,8 @@
 import React from "react";
 
-const WhoWeAre = () => {
+const WhoWeAre = ({ showForm }) => {
   return (
-    <div className="d-container who-we-are">
+    <div id="who-we-are" className="d-container who-we-are">
       <div className="wwa-container-1">
         <div className="wwa-container-2">Who we are</div>
         <div className="wwa-container-3">
@@ -17,7 +17,9 @@ const WhoWeAre = () => {
               perfectly clayed system.
             </span>
             <span className="wwa-text-3">Welcome to the clay experience.</span>
-            <button className="wwa-btn primary-btn">Begin Your Experience</button>
+            <a className="wwa-btn primary-btn" href="#form" onClick={showForm}>
+              Begin Your Experience
+            </a>
           </div>
           <div className="wwa-container-3-right">
             <img

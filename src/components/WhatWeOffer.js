@@ -2,7 +2,7 @@ import React from "react";
 
 const WhatWeOffer = () => {
   return (
-    <div className="d-container what-we-offer">
+    <div id="what-we-offer" className="d-container what-we-offer">
       <div className="wwo-container-1">What we offer</div>
       <div className="wwo-container-2 create">
         <div className="wwo-container-2-text">

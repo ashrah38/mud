@@ -7,6 +7,7 @@
   --hover-orange: #f36a10;
   --teal: #4b7e7b;
   --white: #fff;
+  --red: #ff2c4a;
   --black: #000;
   --grey: #818386;
   --link-font-size: 1.2rem;
@@ -14,6 +15,10 @@
   --logo-font-size: 3rem;
   --logo-font-family: "Caprasimo", cursive;
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -34,10 +39,11 @@ img {
   width: 13rem;
   background: none;
   color: inherit;
-  padding: 0.6rem 0.2rem;
+  padding: 0.6rem 0.6rem;
   border-radius: 50px;
   border: 1px solid var(--grey);
   transition: all 0.2s;
+  text-decoration: none;
 }
 
 .primary-btn:hover {
@@ -59,7 +65,7 @@ img {
   flex-direction: row;
   z-index: 1000;
   width: 100%;
-  height: 5.5rem;
+  height: 5.57rem;
   background-color: var(--white);
   align-items: center;
   justify-content: space-between;
@@ -119,7 +125,7 @@ img {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .dropdown-link {
@@ -143,20 +149,24 @@ img {
 
 .moto {
   font-size: 2.3rem;
+  font-weight: 500;
   letter-spacing: 1px;
   color: var(--white);
   margin-top: 28rem;
 }
 
 .demo-btn {
+  display: inline-block;
+  width: 13rem;
   font-size: 1rem;
-  letter-spacing: 1px;
   color: var(--white);
-  padding: 0.5rem 2.5rem;
+  padding: 0.7rem 0rem;
   border: 1px solid var(--white);
   border-radius: 100px;
   background: none;
   margin-top: 15rem;
+  transition: all 0.2s;
+  text-decoration: none;
 }
 
 .demo-btn:hover {
@@ -352,6 +362,13 @@ img {
   border-radius: 100px;
   background: none;
   margin-top: 4rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.banner-btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .footer {
@@ -495,6 +512,50 @@ img {
   .copyright {
     margin-bottom: 1rem;
   }
+}
+
+.form {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--grey);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+  padding: 2rem;
+}
+
+label span {
+  color: var(--red);
+}
+
+input {
+  margin: 0.5rem;
+  display: block;
+  width: 100%;
+  height: 2.8rem;
+  border-radius: 20px;
+  border: 1px solid var(--grey);
+  padding: 1rem;
+}
+
+textarea {
+  margin: 0.5rem;
+  display: block;
+  width: 100%;
+  height: 2.8rem;
+  border-radius: 20px;
+  border: 1px solid var(--grey);
+  padding: 1rem;
+  height: 9rem !important;
+}
+
+.form-btn {
+  align-self: center;
 }
 
 /* for the footer */
