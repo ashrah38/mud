@@ -11,12 +11,12 @@ const WhoWeAre = () => {
               Most dynamic <br></br> pre-construction experience for buyers and builders.
             </span>
             <span className="wwa-text-2">
-              Modern, immersive, and collaborative, mud is a real-time, enterprise-level platform for builders to manage projects
-              and grow revenue in the physical and digital worlds. mud makes it easy to transform buyers' visions into reality
+              Modern, immersive, and collaborative, clay is a real-time, enterprise-level platform for builders to manage projects
+              and grow revenue in the physical and digital worlds. clay makes it easy to transform buyers' visions into reality
               with trust, sophistication, and simplicity. Now you can integrate everything you need for every project into one
-              perfectly muded system.
+              perfectly clayed system.
             </span>
-            <span className="wwa-text-3">Welcome to the mud experience.</span>
+            <span className="wwa-text-3">Welcome to the clay experience.</span>
             <button className="wwa-btn primary-btn">Begin Your Experience</button>
           </div>
           <div className="wwa-container-3-right">

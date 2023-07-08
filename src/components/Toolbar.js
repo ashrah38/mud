@@ -4,7 +4,7 @@ import Dropdown from "./Dropdown";
 const Toolbar = () => {
   return (
     <div className="toolbar">
-      <div className="logo">mud</div>
+      <div className="logo">Clay</div>
       <div className="links-container">
         <a className="toolbar-link" href="#">
           Who we are

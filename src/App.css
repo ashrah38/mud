@@ -3,6 +3,7 @@
 
 :root {
   --orange: #e65a0c;
+  --footer-orange: #ec6608;
   --hover-orange: #f36a10;
   --teal: #4b7e7b;
   --white: #fff;
@@ -130,7 +131,7 @@ img {
 .d-container {
   width: 100%;
   min-height: 100vh;
-  background-color: red;
+  overflow: hidden;
 }
 
 .main {
@@ -333,6 +334,7 @@ img {
   background: url("https://i.imgur.com/2r3IID1.jpg") no-repeat center center;
   background-size: cover;
   text-align: center;
+  overflow: hidden;
 }
 
 .banner-moto {
@@ -359,15 +361,46 @@ img {
   align-items: center;
   background-color: var(--white);
   min-height: 19.25rem;
+  overflow: hidden;
 }
 
 .f-container-1 {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: clamp(20rem, 80%, 75rem);
+  gap: 4rem;
+  padding-top: 3rem;
+  box-shadow: 0px -2px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.f-container-1-top,
+.f-container-1-bottom {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  min-width: 80rem;
-  border: 2px solid red;
+  width: 100%;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.socials {
+  background-color: var(--footer-orange);
+  padding: 0.25rem 0.6rem;
+  border-radius: 30px;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: var(--grey);
 }
 
 /* media queries */
@@ -382,6 +415,10 @@ img {
 
   .dropdown-icon {
     display: inline;
+  }
+
+  .demo-btn {
+    margin-top: 20%;
   }
 
   .wwa-container-1 {
@@ -405,7 +442,7 @@ img {
   }
 
   .wwa-text-1 {
-    width: 32rem;
+    max-width: 32rem;
   }
 
   .wwa-btn {
@@ -418,6 +455,7 @@ img {
   }
   .wc-text-2 {
     width: 80%;
+    font-size: 1.8rem;
   }
 
   .wc-text-3 {
@@ -440,5 +478,47 @@ img {
 
   .right {
     order: -1;
+  }
+
+  .f-container-1-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .lc-footer {
+    display: flex !important;
+  }
+
+  .copyright {
+    margin-bottom: 1rem;
+  }
+}
+
+/* for the footer */
+@media (max-width: 1023px) {
+  .f-container-1-top {
+    display: flex;
+    flex-direction: column;
+    gap: 2reml;
+  }
+  .lc-footer {
+    display: flex !important;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 1rem;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .locations {
+    font-size: 0.9rem;
   }
 }
